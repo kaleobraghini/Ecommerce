@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #121214;
+  }
+  
+  ul {
+    width: 100vw;
+    height: 45px;
+    list-style-type: none;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  /* Dropdown */
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown a {
+    width: 80px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    background-color: #333;
+    color: white;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    top: 45px;
+  }
+  
+  /* Cart Icon */
+  
+  .cart {
+    float: right;
+    order: 3;
+  }
+  
+  .cart a {
+    padding: 12px 16px;
+  }
+  
+  .cart img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .cart:hover a {
+    width: 24px;
+    height: 28px;
+  }
+  
+  /* Menu Icon */
+  
+  .menu {
+    float: right;
+    order: 2;
+  }
+  
+  .menu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    background-color: #111;
+    width: 24px;
+    height: 22px;
+  }
+  
+  .menu img {
+    width: 24px;
+    height: 24px;
+  }
+
+/* Resposividade */
+
+@media only screen and (max-width: 600px) {
+
+  ul {
+    text-align: center;
+    height: auto;
+  }
+
+  li {
+    margin: 0;
+    width: 100%;
+    border-top: 1px solid white;
+  }
+
+  li:first-child {
+    border-top: none;
+  }
+
+  a {
+    padding: 12px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  .dropdown-content a {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    border-top: 1px solid white;
+  }
+
+  .dropdown-content a:first-child {
+    border-top: none;
+  }
+
+  .dropdown-content a:last-child {
+    border-bottom: 1px solid white;
+  }
+
+  .cart {
+    margin: 0 auto;
+    order: 1;
+  }
+
+  .cart a {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+  }
+
+  .menu {
+    display: block;
+    order: 2;
+  }
+
+  .menu a {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+  }
+}
